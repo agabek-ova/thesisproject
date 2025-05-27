@@ -245,8 +245,6 @@ def create_multiple_bar_chart(
         filter_text = f" – for '{filter_value}' category in {prettify(filter_column)}"
 
     # plotting
-    sns.barplot(data=grouped_df, x=x_column, y=y_column, hue=hue_column, ax=ax)
-
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.barplot(data=grouped_df, x=x_column, y=y_column, hue=hue_column, ax=ax)
     ax.set_xlabel(xlabel)
@@ -641,7 +639,7 @@ def create_scatter_plot(
         filter_text = f" – for '{filter_value}' in {prettify(filter_column)}"
 
     hue_text = f" colored by {prettify(hue_column)}" if hue_column and hue_column != 'None' else ""
-    title = f"Scatter Plot: {ylabel} vs {xlabel}{hue_text}{filter_text}"
+    #title = f"Scatter Plot: {ylabel} vs {xlabel}{hue_text}{filter_text}"
 
     # plotting
     fig, ax = plt.subplots()
@@ -652,7 +650,7 @@ def create_scatter_plot(
     ax.set_title("")  # Remove top title
 
     # footer title
-    fig.text(0.5, -0.08, title, ha='center', fontsize=10, color='gray')
+    #fig.text(0.5, -0.08, title, ha='center', fontsize=10, color='gray')
 
     # chart display
     st.pyplot(fig)
