@@ -1,0 +1,10 @@
+streamlit
+pandas
+matplotlib
+seaborn
+requests
+streamlit-option-menu>
+streamlit-extras
+streamlit-lottie
+openpyxl
+
