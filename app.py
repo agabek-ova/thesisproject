@@ -838,7 +838,7 @@ def show_projects_page():
     with col4_header:
         st.write("### Step 4. Customize your plot")
     with col5_header:
-        st.write("### Step 5. Your chart")
+        st.write("### Step 5. Your plot")
 
 
     col_custom, col_showplot = st.columns([1, 1])
